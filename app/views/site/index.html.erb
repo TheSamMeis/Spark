@@ -1,0 +1,22 @@
+<div id="background">
+
+	<div id="headline">
+		Your Home, More Lovely
+	</div>
+
+	<div id="subtext">
+		Ala Fresh Flowers Delivered To Your Door
+	</div>
+
+
+	 <%= form_tag do %>
+        <div class="field" style='position: relative; left:-40px;'>
+          <%= label_tag :email_address, 'Email Address:' %>
+         <%=text_field_tag :email_address %>
+        </div>
+            <div class="actions" style='position: relative; left:40px; top:20px;'>
+          <%= submit_tag("GET STARTED", class: "button" ) %>
+        </div>
+      <% end %>
+
+</div>
