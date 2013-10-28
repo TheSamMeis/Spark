@@ -1,5 +1,8 @@
 <div id="background">
 
+
+
+
 	<div id="headline">
 		Your Home, More Lovely
 	</div>
@@ -8,15 +11,15 @@
 		Ala Fresh Flowers Delivered To Your Door
 	</div>
 
-
-	 <%= form_tag do %>
-        <div class="field" style='position: relative; left:-40px;'>
-          <%= label_tag :email_address, 'Email Address:' %>
-         <%=text_field_tag :email_address %>
-        </div>
-            <div class="actions" style='position: relative; left:40px; top:20px;'>
-          <%= submit_tag("GET STARTED", class: "button" ) %>
-        </div>
-      <% end %>
+ <div class='form'>
+		<form action="/lists/b87cecaa20/subscribe/" method="post" class="form">
+		 <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	    <input type="hidden" name="list_id" value="b87cecaa20"/>
+	    <input type="email" name="email" placeholder="Email Address" class="field"/>
+	    <br>
+	     <input type="submit" class="button_style btn" value="Request Invitation"/>
+		
+		</form>
+	</div>
 
 </div>
