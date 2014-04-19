@@ -21,14 +21,15 @@ body{
 
 #headline{
 	text-align:center;
-	color: black;
+	color: white;
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 55px;
 	font-family: 'Raleway', sans-serif;
-	padding-top: 130px;
+	padding-top: 5px;
+	text-shadow: black 1px 1px 4px #4e4e4e;
 	text-transform: uppercase;
 	line-height: 40px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 #subtext{
@@ -38,7 +39,7 @@ body{
 	font-size: 26px;
 	text-transform: uppercase;
 	margin: 15px;
-	color: #b4af7c;
+	color: #4e4e4e;
 }
 
 .field{
@@ -127,4 +128,16 @@ p {
 
 .facebook{
 	margin: 10px;
+}
+
+.logo{
+	margin: auto;
+	text-align: center;
+	margin-top: 15px;
+	width: 140px;
+}
+
+#logo_wrapper{
+	margin:auto;
+	width:140px;
 }
