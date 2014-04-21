@@ -1,0 +1,48 @@
+<div id="top-header"> 
+	<div class="container">
+		<div id="logo"> 
+		Spark Entrepreneurs
+	</div>
+	</div>
+</div>
+<div class="container">
+	<div id="photo-header"> 
+		<div class="main-header" id="top">
+			Let's Spark Our Team to Be
+		</div>
+		<div class="main-header" id="bottom">
+			Entrepreneurs
+		</div>
+		<hr>
+		<div class="subheader"> 
+		Getting the most from your team <br> in roles they love and thrive in. 
+		</div>
+
+		<div id="people"> 
+		</div>
+
+	</div>
+</div>	
+
+<div class="container" id="main"> 
+	<h1> Order Summary </h1>
+	<h2> Some text goes here </h2>
+
+ <%= @name %>
+ <%= @quantity %> quizes
+<%= Rails.configuration.stripe[:publishable_key] %>
+
+<%= form_tag charges_path do %>
+  <article>
+    <label class="amount">
+      <span>Amount:  $<%= @amount_formatted %>0</span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="<%= @name %> <%= @quantity %> quizes"
+          data-amount="<%=@amount %>"></script>
+<% end %>
+</div>
+

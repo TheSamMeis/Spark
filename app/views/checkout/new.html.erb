@@ -1,0 +1,61 @@
+<div id="top-header"> 
+	<div class="container">
+		<div id="logo"> 
+		Spark Entrepreneurs
+	</div>
+	</div>
+</div>
+<div class="container">
+	<div id="photo-header"> 
+		<div class="main-header" id="top">
+			Let's Spark Our Team to Be
+		</div>
+		<div class="main-header" id="bottom">
+			Entrepreneurs
+		</div>
+		<hr>
+		<div class="subheader"> 
+		Getting the most from your team <br> in roles they love and thrive in. 
+		</div>
+
+		<div id="people"> 
+		</div>
+
+	</div>
+</div>	
+
+<div class="container" id="main"> 
+	<h1> Take the Quiz </h1>
+	<h2> Some text goes here </h2>
+	<p> 
+			Mlkshk gastropub biodiesel, viral Schlitz Shoreditch actually single-origin coffee master cleanse bitters meggings mumblecore. Cliche Neutra bicycle rights skateboard, keffiyeh stumptown sustainable roof party. Whatever readymade fanny pack, hashtag Intelligentsia biodiesel chillwave craft beer asymmetrical meh Neutra. Kogi banh mi fap Godard shabby chic, polaroid Banksy Bushwick plaid distillery chia vinyl biodiesel. Bushwick synth wolf retro vegan Neutra American Apparel tattooed 3 wolf moon, wayfarers Tumblr biodiesel. Pop-up stumptown tattooed, Cosby sweater readymade chia gentrify lomo farm-to-table hella XOXO bitters. Synth squid banjo beard.
+		</p>
+
+		<%= form_tag do %>
+        <div class="field" >
+          <%= label_tag :name, 'Name:' %>
+         <%=text_field_tag :name %>
+        </div>
+
+        <div class="field">
+          <%= label_tag :email, 'Email:' %>
+          <%= text_field_tag :email %>
+        </div>
+
+         <div class="field">
+          <%= label_tag :quantity, 'Number of Team Members:' %>
+          <%= number_field_tag :quantity %>
+        </div>
+
+        <div class="field">
+          <%= label_tag :practice, 'Practice Name:' %>
+          <%= password_field_tag :practice %>
+        </div>
+        <div class="actions" style='position: relative; left:40px; top:20px;'>
+          <%= submit_tag("GET STARTED", class: "button" ) %>
+        </div>
+      <% end %>
+
+      <%=@amount%>
+
+</div>
