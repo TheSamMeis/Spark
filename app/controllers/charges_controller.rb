@@ -1,6 +1,6 @@
 class ChargesController < ApplicationController
 	def new
-		 @user=User.new
+		
 
 		@name = params[:name]
 		@quantity = params[:quantity]
