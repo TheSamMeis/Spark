@@ -29,10 +29,11 @@ body{
 	margin: auto;
 }
 .container#main{
+	width: 800px;
 	background: white;
 	border-top: solid black 20px;
 	margin-top: 50px;
-	padding: 30px;
+	padding: 0 100px;
 }
 
 #top-header{
