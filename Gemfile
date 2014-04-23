@@ -34,6 +34,8 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'protected_attributes'
 gem 'twitter-bootstrap-rails'
 gem 'pg'
+gem 'rails_12factor'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
