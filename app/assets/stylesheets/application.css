@@ -64,7 +64,7 @@ body{
 }
 
 #people{
-	background-image: image-url("people.gif");
+	background-image: url("people.gif");
 	width: 410px;
 	height: 309px;
 	background-size: 100%;
