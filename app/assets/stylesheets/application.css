@@ -27,6 +27,7 @@ body{
 .container{
 	width: 1000px;
 	margin: auto;
+	margin-bottom: 50px;
 }
 .container#main{
 	width: 800px;
@@ -34,6 +35,15 @@ body{
 	border-top: solid black 20px;
 	margin-top: 50px;
 	padding: 0 100px;
+}
+
+.container.order-summary{
+	width: 500px;
+	background: white;
+	border-top: solid black 20px;
+	margin-top: 50px;
+	padding: 0 100px;
+	text-align: center;
 }
 
 #top-header{
@@ -53,40 +63,51 @@ body{
 
 .main-header#top{
 	font-size: 39px;
+	padding-top: 50px;
 }
 
 .main-header#bottom{
 	font-size: 68px;
+	margin-bottom: 20px;
 }
 
 #photo-header{
-	margin-top: 50px;
+	margin-top: 9px;
+	height: 260px;
 }
 
 #people{
 	background-image: url("people.gif");
-	width: 410px;
+	width: 441px;
 	height: 309px;
 	background-size: 100%;
 	float: left;
 	position: absolute;
-	top: 36px;
-	margin-left: 600px;
+	top: 60px;
+	margin-left: 560px;
 }
 
 .subheader{
 	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-size: 30px;
 	width: 650px;
 	font-weight: bold;
+	margin-top: 20px;
 }
 
 	#logo{
 		font-family: 'Roboto Slab', serif;
 		font-weight: bold;
 		text-transform: uppercase;
-		font-size: 30px;
-		padding-top: 4px;
+		font-size: 22px;
+		padding-top: 9px;
+		color: #7accc8;
 
+	}
+
+	hr{
+		color: #bebebe;
+		background-color: #bebebe;
+		border: solid 1px #bebebe;
 	}
