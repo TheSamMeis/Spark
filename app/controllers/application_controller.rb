@@ -7,9 +7,17 @@ class ApplicationController < ActionController::Base
 
   before_action :setup_mcapi
 
-	  def setup_mcapi
-	    @mc = Mailchimp::API.new('edb6d70c66f39ec8d47fc805140b1c08-us3')
-	  end
+  def setup_mcapi
+    @mc = Mailchimp::API.new('edb6d70c66f39ec8d47fc805140b1c08-us3')
+  end
+
+  def current_user
+    @current_user || User.find(session[:user_id]) if session[:user_id].present?
+  end
+
+  def set_current_user(user)
+    session[:user_id] = user.id
+  end
 
 
 

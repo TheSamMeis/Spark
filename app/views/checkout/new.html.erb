@@ -25,37 +25,87 @@
 </div>	
 
 <div class="container" id="main"> 
-	<h1> Take the Quiz </h1>
-	<h2> Some text goes here </h2>
+
+	<h2> If you were able to unlock the entrepreneurial talents of your team, what would that mean?  </h2>
 	<p> 
-			Mlkshk gastropub biodiesel, viral Schlitz Shoreditch actually single-origin coffee master cleanse bitters meggings mumblecore. Cliche Neutra bicycle rights skateboard, keffiyeh stumptown sustainable roof party. Whatever readymade fanny pack, hashtag Intelligentsia biodiesel chillwave craft beer asymmetrical meh Neutra. Kogi banh mi fap Godard shabby chic, polaroid Banksy Bushwick plaid distillery chia vinyl biodiesel. Bushwick synth wolf retro vegan Neutra American Apparel tattooed 3 wolf moon, wayfarers Tumblr biodiesel. Pop-up stumptown tattooed, Cosby sweater readymade chia gentrify lomo farm-to-table hella XOXO bitters. Synth squid banjo beard.
-		</p>
+		It would mean unlocking infinite potential of your assistants, hygienists, and associates. You'd have a flexible teams who would not only cooperate, but also co-lead and co-create. You've been trying to lead your team in the direction of success, but you've been without the tools to unlock their entrepreneurial potential. 
+	</p>
 
-		<%= form_tag do %>
-        <div class="field" >
-          <%= label_tag :name, 'Name:' %>
-         <%=text_field_tag :name %>
-        </div>
+	<p>
+		You tell your hygienists to offer fluoride to adults and help them accept the care, but this often times does not get done. Imagine you have successfully identified and nurtured the entrepreneurial traits in one hygienist. This hygienist feels confident in their ability to sell and motivated to help the patient accept the care. Not only that, she comes up with a new, better way to sell the patient on the fluoride treatment, and spreads it to your other team members.
+	</p>	 
+	<h2> What does this look like for your practice and your patients? </h2>
+	<p>
+ 		It looks like better patient care and increased revenue. It all comes down to one thing: The only way your practice is going to do better is to focus on better patient care.  
+ 	</p>
 
-        <div class="field">
-          <%= label_tag :email, 'Email:' %>
-          <%= text_field_tag :email %>
-        </div>
+ 	<p>
+		Benefits for patients 
+		Better patient care
+		Less tooth decay 
+		Acceptance of the best solution
+	</p>
+	<p>
+		Benefits for Practice
+		Higher revenues
+		Happier team
+		Increased efficiency 
+	</p>
+	<p>
+		What if your hygienist could sell just one more fluoride treatment a day? What if your assistant could get one more patient per day to accept treatment for a crown? 
+	</p>
+	<p>
+		Crowns: $1000 x 200 working days = $200,000 per assistant
+		Fluoride: $30 X 200 working days = $30,000 per assistant 
+	</p>
+	<p>
+		How many assistants and hygeniests do you have? If you’re the average practice, you have two hygeinists and two assistants. That’s almost $500,000 extra your practice could be making per year! All you need is the tools to spark entrepreneurship in your team.
+	</p>
 
-         <div class="field">
-          <%= label_tag :quantity, 'Number of Team Members:' %>
-          <%= number_field_tag :quantity %>
-        </div>
+		<h2>	What you get </h2>
+	<p>	
+		Unlimited access to the 4 Dimensions of Entrepreneurial Success Evaluation – 60 questions to tell you exactly what kind of entrepreneur your team members are. 
+	</p>
 
-        <div class="field">
-          <%= label_tag :practice, 'Practice Name:' %>
-          <%= text_field_tag :practice %>
-        </div>
-        <div class="actions" style='position: relative; left:40px; top:20px;'>
-          <%= submit_tag("GET STARTED", class: "button" ) %>
-        </div>
-      <% end %>
+	<p>
+		Interpretations to their results: Once you have identified their unique entrepreneurial traits, you can help them to foster those traits.
+	</p>
+	<p>
+		2 hour long webinars – Learn how to take the results and implement them in your own practice to unlock the entrepreneurs on your team. 
+	</p>
+	<p>
+		2 coupons for 30 minutes of FREE personal coaching from Samantha – Get one on one advice for each of your team members. 
+	</p>
+	<p>
+		 What is that worth to you? Some would be willing to pay $50,000 for the opportunity to increase revenues by $500,000.  This special offer is priced at $1000, but special for the Team Training Institute, this special offer will only cost you $899. 
+	</p>
 
-      <%=@amount%>
+	<h2 style="margin-bottom:0px;">Get Started </h2>
+	<%= form_tag do %>
+    <div class="field" >
+      <%= label_tag :name, 'Name', class: 'field-name'  %>
+     <%=text_field_tag :name, nil, class: 'field-input' %>
+    </div>
+
+    <div class="field">
+      <%= label_tag :email, 'Email', class: 'field-name' %>
+      <%= text_field_tag :email, nil, class: 'field-input' %>
+    </div>
+
+     <div class="field">
+      <%= label_tag :quantity, 'Number of Team Members', class: 'field-name' %>
+      <%= number_field_tag :quantity, nil, class: 'field-input' %>
+    </div>
+
+    <div class="field">
+      <%= label_tag :practice, 'Practice Name', class: 'field-name' %>
+      <%= text_field_tag :practice, nil, class: 'field-input' %>
+    </div>
+    <div class="actions" style='position: relative; left:40px; top:20px;'>
+      <%= submit_tag("GET STARTED", class: "button_style form_button" ) %>
+    </div>
+   <% end %>
+
+    <%=@amount%>
 
 </div>

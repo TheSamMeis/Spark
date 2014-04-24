@@ -7,8 +7,8 @@ class ChargesController < ApplicationController
 	end
 
 	def create
-		@amount=89900
     @order = current_user.orders.last
+    @description = current_user.name
 	  customer = Stripe::Customer.create(
 	    :email => current_user.email,
 	    :card  => params[:stripeToken]
@@ -16,8 +16,8 @@ class ChargesController < ApplicationController
 
 	  charge = Stripe::Charge.create(
 	    :customer    => customer.id,
-	    :amount      => @amount,
-	    :description => params[:stripeDescription],
+	    :amount      => @order.total_amount_formatted*100.to_i,
+	    :description => @description,
 	    :currency    => 'usd'
 	  )
 

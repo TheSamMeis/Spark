@@ -54,7 +54,7 @@ body{
 
 .button_style{
 
-	  background: #ee5467;
+	  background: #cf5900;
 	  border-radius: 2px;
 	  border: 0px;
 	  color: white;
@@ -64,19 +64,29 @@ body{
 	  height: 50px;
 	  padding: 0px 50px;
 	  cursor: pointer;
-		float: left;
+		
 	  margin: auto;
 	  margin-top: 20px;
-	  margin-left: 125px;
-	  box-shadow: 1px 1px 5px #464545;
+	 
+	 
 }
 
+.button_style:hover{
+	background: #d2732c;
+}
+
+.button_style.form_button{
+	margin-left: -40px;
+}
 .form{
 	margin: auto;
 	width:500px;
+	margin-bottom: 50px;
 }
 
-
+form{
+	padding-bottom: 66px;
+}
 #share{
 	background:  image-url('scallopbox.png');
 	background-size: 500px;
@@ -107,9 +117,9 @@ h1{
 h2 {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
-	font-size: 33px;
-	text-align: center;
-	margin-top: 10px;
+	font-size: 23px;
+	text-align: left;
+	margin: 40px 0px;
 }
 
 .win{
@@ -124,8 +134,8 @@ h2 {
 
 p {
 	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-	line-height: 2.3em;
+	font-weight: regular;
+	line-height: 1.5em;
 
 }
 
@@ -143,4 +153,25 @@ p {
 #logo_wrapper{
 	margin:auto;
 	width:140px;
+}
+.field-input{
+	width: 85%;
+	height: 25px;
+}
+.field-name{
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-weight: regular;
+}
+.field-name, .field-input{
+	display: block
+}
+
+.field{
+	float: left;
+	width: 50%;
+}
+
+.button{
+	
 }
