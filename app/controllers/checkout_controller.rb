@@ -4,8 +4,11 @@ class CheckoutController < ApplicationController
 	end
 
 	def create
-		redirect_to controller: 'charges', action: 'new',
-                 order_id: create_order(params[:quantity]).to_param
+		# redirect_to controller: 'charges', action: 'new',
+  #                order_id: create_order(params[:quantity]).to_param
+
+    redirect_to generate_url('https://sparkentrepreneurship.herokuapp.com/charges/new',
+     :order_id => create_order(params[:quantity]))
 	end
 
   def index
