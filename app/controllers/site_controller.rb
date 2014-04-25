@@ -19,6 +19,9 @@ class SiteController < ApplicationController
     # end
   end
 
+  def issue
+  end
+
   def view
     list_id = params[:id]
     begin
