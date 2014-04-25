@@ -12,6 +12,11 @@ Bloomslanding::Application.routes.draw do
   resources :checkout
   get 'orderlist' => 'checkout#index'
   post "dental" => "checkout#create"
+
+  constraints(:host => /sparkentrepreneurship.com/) do
+  root :to => redirect("http://www.sparkentrepreneurship.com")
+      match '/*path', :to => redirect {|params| "http://www.sparkentrepreneurship.com/#{params[:path]}"}
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
