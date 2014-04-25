@@ -2,7 +2,7 @@ Bloomslanding::Application.routes.draw do
 
   resources :orders
 
-  root 'checkout#new'
+  root 'site#index'
 
   post "lists/b87cecaa20/subscribe" => 'site#subscribe'
   get 'success' => 'site#success'
@@ -13,7 +13,7 @@ Bloomslanding::Application.routes.draw do
   get 'orderlist' => 'checkout#index'
   post "dental" => "checkout#create"
 
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
