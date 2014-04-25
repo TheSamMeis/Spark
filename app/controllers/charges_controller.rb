@@ -7,7 +7,7 @@ class ChargesController < ApplicationController
 	end
 
 	def create
-		@amount=89900
+		@amount=150
     @order = current_user.orders.last
     @description = current_user.name
 	  customer = Stripe::Customer.create(
