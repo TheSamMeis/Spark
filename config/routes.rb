@@ -2,7 +2,7 @@ Bloomslanding::Application.routes.draw do
 
   resources :orders
 
-  root 'site#index'
+  root 'checkout#create'
 
   post "lists/b87cecaa20/subscribe" => 'site#subscribe'
   get 'success' => 'site#success'
