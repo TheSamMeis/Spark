@@ -4,17 +4,19 @@ class SiteController < ApplicationController
 
 
   def index
-    begin
-      lists_res = @mc.lists.list
-      @lists = lists_res['data']
-    rescue Mailchimp::Error => ex
-      if ex.message
-        flash[:error] = ex.message
-      else
-        flash[:error] = "An unknown error occurred"
-      end
-      redirect_to "/"
-    end
+
+    redirect_to "/dental"
+    # begin
+    #   lists_res = @mc.lists.list
+    #   @lists = lists_res['data']
+    # rescue Mailchimp::Error => ex
+    #   if ex.message
+    #     flash[:error] = ex.message
+    #   else
+    #     flash[:error] = "An unknown error occurred"
+    #   end
+    #   redirect_to "/"
+    # end
   end
 
   def view
