@@ -2,7 +2,7 @@
 
 <div class="container order-summary"> 
 	<h1 style="font-size: 45px"> Order Summary </h1>
-	<h2 style="text-align:center;"> Spark Entrepreneur Dental Package </h2>
+	<h2 style="text-align:center;"> Spark Entrepreneur Team Breakthrough </h2>
 
 	<p>  Access to the <strong>4 Dimensions of Entrepreneurial <br> Success Assessment</strong></p>
 
@@ -26,7 +26,7 @@
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="<%= @order.user.name %>'s Package"
+          data-description="<%= @order.user.name %>'s Team Breakthrough Program"
           data-amount="89900"
           data-email="<%=@order.user.email %>">
           </script>

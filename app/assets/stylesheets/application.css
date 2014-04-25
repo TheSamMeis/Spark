@@ -100,6 +100,16 @@ body{
 	margin-left: 560px;
 }
 
+#patient-benefits{
+	background-image: url("patientbenefits.jpg");
+	background-size: 100%;
+	width: 400px;
+	height: 230px;
+	float: left;
+	margin: 0 20px 15px 0;
+
+}
+
 .subheader{
 	font-family: 'Raleway', sans-serif;
 	/*text-transform: uppercase;*/
@@ -124,3 +134,27 @@ body{
 		background-color: #bebebe;
 		border: solid 1px #bebebe;
 	}
+
+	.field-input{
+	width: 85%;
+	height: 25px;
+}
+.field-name{
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-weight: regular;
+}
+.field-name, .field-input{
+	display: block
+}
+
+.field{
+	text-align: center;
+	width: 50%;
+	height: 25px;
+	font-size: 20px;
+	margin-top: 30px;
+	font-family: 'Roboto Slab', serif;
+	float: left;
+
+}
