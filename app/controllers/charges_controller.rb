@@ -7,7 +7,7 @@ class ChargesController < ApplicationController
 	end
 
 	def create
-		@amount=89900
+		@amount=150
     @order = current_user.orders.last
 	  customer = Stripe::Customer.create(
 	    :email => current_user.email,
